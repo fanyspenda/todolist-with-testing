@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { Form, Input, Button } from "semantic-ui-react";
 import Card from "../components/card";
 
-export interface TodoProps {}
-
-const Todo: React.FunctionComponent<TodoProps> = () => {
+const Todo: React.FunctionComponent = () => {
   const [text, setText] = useState<string>("");
   const [todos, setTodo] = useState<string[]>([]);
-  const [dones, setDone] = useState<string[]>([]);
+  // const [dones, setDone] = useState<string[]>([]);
 
   return (
     <>

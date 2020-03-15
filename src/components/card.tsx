@@ -7,7 +7,7 @@ export interface CardProps {
 
 const Card: React.SFC<CardProps> = ({ data }) => {
   return (
-    <SCard fluid>
+    <SCard data-testid="card-todo" fluid>
       <SCard.Content data-testid="todo-name">{data}</SCard.Content>
     </SCard>
   );
