@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Input, Button } from "semantic-ui-react";
+import { Form, Input, Button, Segment } from "semantic-ui-react";
 import Card from "../components/card";
 
 const Todo: React.FunctionComponent = () => {
@@ -8,7 +8,7 @@ const Todo: React.FunctionComponent = () => {
   // const [dones, setDone] = useState<string[]>([]);
 
   return (
-    <>
+    <Segment basic>
       <h1 data-testid="header1">Todo List</h1>
       <Form>
         <Input
@@ -25,7 +25,7 @@ const Todo: React.FunctionComponent = () => {
       {todos.map((todo, index) => (
         <Card data={todo} key={index} />
       ))}
-    </>
+    </Segment>
   );
 };
 
